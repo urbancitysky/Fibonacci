@@ -1,0 +1,25 @@
+CECS 424  Assignment 7
+
+Write a recursive method, fib, that computes the Nth Fibonacci number. The 
+formulas are
+f(0) = 1, f(1) =1, f(n) = f(n-1) + f(n-2)
+
+Write a method, fib3, that returns a tuple contained fib(N) computed three 
+times.
+
+Write a function loop() which is an entry point for a process.  When it 
+receives a tuple of a process id and parameter N from a process it sends back 
+a tuple of its own process id and fib(N) to that process.
+
+Write a method con(N) that spawns three processes each with entry point the 
+loop method.  It sends each of these processes a tuple with its process id and 
+the argument N.  It receives the tuples from the three processes and returns a 
+tuple with the three fib(N) values.
+
+Compare the time of the fib3 function with that of the con function using the 
+timer:tc(module, function, list of parameters) method.  The first element of 
+the return value will be the time in microseconds. The second element will be 
+the tuple of three computations of the same Fibonacci number.  A value of N 
+between 25 and 35 should give a good comparison depending on the hardware.
+
+If you have a multicore machine you will see a difference in performance. 
