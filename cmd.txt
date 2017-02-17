@@ -1,0 +1,17 @@
+c(lab7).
+
+lab7:fib(0).
+lab7:fib(1).
+lab7:fib(2).
+lab7:fib(3).
+lab7:fib(4).
+lab7:fib(5).
+
+lab7:fib(25).
+
+lab7:fib3(25).
+
+lab7:con(25).
+
+timer:tc(lab7,fib3,[20]).
+timer:tc(lab7,con,[35]).
